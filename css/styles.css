@@ -1,0 +1,186 @@
+body {
+  background-image: url(../Images/2.jpg);
+  background-size: cover ;
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+.header-1 h1 {
+  position: relative;
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  line-height: 60px;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0%;
+  width: 100%;
+  height: 40%;
+  background-color: #fec260;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+h1:hover::after {
+
+  height: 70%;
+
+}
+
+.header-2 {
+  font-family: 'Righteous', cursive;
+  font-size: 25px;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.label-font {
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.icon {
+  font-size: 1rem;
+  color: black;
+}
+
+.section-1 {
+  margin: 0 2.5rem 0 2.5rem;
+  border-width: 2px 0 2px 0;
+  border-style: dotted;
+  border-color: #352e28;
+}
+
+.submit {
+  text-align: center;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  background-color: #d1512d;
+  color: white;
+  border-color: #d1512d;
+  transition: all 0.15s ease-in-out;
+
+}
+
+.submit:hover {
+  background-color: #bb4120;
+  color: white;
+  border-color: #a03315;
+}
+
+#lightBoxContainer {
+  background-color: rgba(0, 0, 0, 0.25);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#lightBox {
+  background-color: aliceblue;
+  width: 35%;
+  height: 40%;
+
+
+}
+
+.header {
+  padding: 2.5rem 1.5rem 0 1rem;
+}
+
+.iconz {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.circle-1 {
+  background-color: #f15f5d;
+}
+
+.circle-2 {
+  background-color: #febe2e;
+}
+
+.circle-3 {
+  background-color: #4db748;
+}
+
+#lightBoxContainer h5 {
+  font-family: 'Bree Serif', serif;
+  font-size: 21px;
+  line-height: 27px;
+  font-weight: 400;
+  color: black;
+  padding: 0px 0px 8px;
+}
+
+#lightBoxContainer p {
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  color: black;
+}
+
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #d99c39;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+
+.btn-visit {
+  background-color: #9eb23b;
+  border-color: #9eb23b;
+  transition: all .15s ease-in-out;
+
+}
+
+.btn-visit i {
+  color: #fff;
+}
+
+
+.btn-visit:hover {
+  background-color: #8a9e23;
+  color: #fff;
+  border-color: #6e8018;
+
+}
+
+a:hover {
+  color: #fff;
+}
+
+.btn-delete {
+  background-color: #eb1d36;
+  border-color: #eb1d36;
+  transition: all .15s ease-in-out;
+  color: #fff;
+
+}
+
+.btn-delete:hover {
+  background-color: #d30820;
+  border-color: #eb1d36;
+  color: #fff;
+
+}
+
+.btn-delete i {
+  color: #fff;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: #fff;
+}

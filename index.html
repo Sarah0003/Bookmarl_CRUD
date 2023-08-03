@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="mt-5 mb-5">
+  <div class="container w-100">
+    <div class="header-1 d-flex justify-content-center  align-items-center">
+      <h1 class="text-center">Bookmarker</h1>
+    </div>
+    <div class="w-100 mx-auto py-5">
+      
+
+      <div class="section-1 form-group p-5 d-flex flex-column justify-content-center align-items-center">
+
+        <h2 class="header-2 text-center">
+          <i class="fa-solid fa-bookmark"></i>
+          Bookmark your favorite sites
+          <i class="fa-solid fa-bookmark"></i>
+        </h2>
+
+
+        <div class="nameLable w-100">
+        <label for="siteName" class="mb-3 label-font">
+          <i class="fa-solid fa-book-bookmark pe-2 "></i> Site Name:</label>
+          <input type="text" class="form-control mb-2" id="siteName" placeholder="Enter Site Name" />
+        </div>
+        <p class="text-danger d-none" id="exists">
+          Name already exists please try again!
+        </p>
+        <div class="nameLable w-100">
+
+        <label for="siteURL" class="mt-3 mb-3  label-font">
+          <i class="fa-solid fa-link pe-2 "></i>Site URL</label>
+        <input type="text" class="form-control" id="siteURL" placeholder="Enter Site URL" />
+      </div>
+
+        <button onclick="addBookmark() " id="submit" class="btn mt-5 submit d">
+          Submit
+        </button>
+      </div>
+    </div>
+
+    <div id="lightBoxContainer" class="d-none align-items-center justify-content-center">
+      <div id="lightBox" class="rounded-3 ps-2">
+        <div class="header d-flex justify-content-between align-items-cente">
+          <div class="circles d-flex">
+            <span class="iconz circle-1 rounded-circle me-2"></span>
+            <span class="iconz circle-2 rounded-circle me-2"></span>
+            <span class="iconz circle-3 rounded-circle me-2"></span>
+          </div>
+          <i id="closeBtn" class="fa-solid fa-xmark close fs-3 exit"></i>
+        </div>
+
+       
+        <div class="content">
+        <h5 class="p-2">
+            Site Name or Url is not valid, Please follow the rules below :
+          </h5>
+          <p class="mb-0" id="wrong">
+            <i class="fa-regular fa-circle-right p-3 text-danger" ></i>
+            Site name must contain at least 3 characters.
+          </p>
+          <p class="mb-0" id="wrongNumber">
+            <i class="fa-regular fa-circle-right p-3  text-danger"></i>
+            Site URL must be a valid one.
+          </p>
+        </div>
+      </div>
+    </div>
+    <table class="table bg-white text-black text-center w-100 mx-auto">
+      <thead>
+        <th>Index</th>
+        <th>Website Name</th>
+        <th>Visit</th>
+        <th>Delete</th>
+      </thead>
+      <tbody id="t-body"></tbody>
+    </table>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
